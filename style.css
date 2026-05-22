@@ -1,1 +1,90 @@
-/* Add your CSS here */
+/* Variables */
+html{
+  --brandcolor-lightblue: #00C7FD;
+  --brandcolor-darkblue: #0068B5;
+  --brandfont-body: 'Intel One Mono';
+  --brandfont-title: 'Inter';
+}
+
+/* Defaults */
+body{
+  background-color: white;
+  font-family: var(--brandfont-body), 'Courier New', Courier, monospace;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--brandfont-title), 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/*Nav Bar*/
+nav {
+  background-color: var(--brandcolor-darkblue);
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50%;
+  margin-left: 0.4rem;
+}
+
+/* Header */
+
+header{
+  background-color: var(--brandcolor-darkblue); /*backup\default*/
+  background: linear-gradient(165deg, var(--brandcolor-lightblue), var(--brandcolor-darkblue));              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+
+  margin-bottom: 2rem;
+}
+
+.header-content{
+  color: white;
+  font-size: 1.2rem;
+  max-width: 62.5rem;
+  min-width: 28.125rem;
+
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.header-content h1{
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1::after {
+  content: "";
+  display: block;
+  width: 30%;
+  min-width: 1.875rem;
+  height: .0625rem;
+  background: var(--brandcolor-darkblue);
+  filter: brightness(0.8);
+  margin-top: 1.4rem;
+}
+
+
+@media only screen and (max-width:846px){
+  html{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  html {
+    /*Placeholder to indicate mobile sized screen in preview*/
+    font-size: 40%; 
+  }
+}
