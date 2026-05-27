@@ -130,7 +130,6 @@ header h1::after {
 }
 
 .card-content{
-  border: 1px solid pink;
   border-radius: 0.4rem;
   position: relative;
   overflow: hidden;
